@@ -139,6 +139,15 @@ src/
 - @import url() must precede all other rules (warning shown but works)
 - Video file imported via relative path in HeroBanner.jsx
 
+## Tailwind Setup
+- Uses Tailwind CSS v3 with PostCSS (NOT @tailwindcss/vite plugin)
+- vite.config.js uses only react plugin (no tailwindcss plugin)
+- postcss.config.js: tailwindcss + autoprefixer
+- tailwind.config.js: custom colors (brand, teal, dark-*), Nunito font
+- index.css: @tailwind base/components/utilities directives (not @import "tailwindcss")
+- CSS variables (--font-nunito, etc.) defined in :root manually
+- Compatible with Cloudflare Pages (no missing @tailwindcss/vite error)
+
 ## Commands
 - `npm run dev` - Start dev server
 - `npm run build` - Production build
@@ -147,8 +156,8 @@ src/
 ## Status: BUILD PASSING ✓
 - All components implemented and working
 - All 50 products have individual detail pages at /product/:id with full specs
-- Build succeeds with no errors (only CSS @import order warning)
-- Site ready for visual review and asset replacement
+- Build succeeds with no errors
+- Compatible with Cloudflare Pages deployment
 
 ## Pending / To Be Replaced
 - [ ] Place actual hero video at `public/banner.mp4`
