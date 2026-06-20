@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
   return (
     <Link
       to={`/product/${product.id}`}
-      className="group flex flex-col rounded-2xl overflow-hidden border border-white/5 bg-gradient-to-b from-[#111827] to-[#0d1117] hover:border-[#02cbf9]/30 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(2,203,249,0.12)] hover:-translate-y-1 no-underline"
+      className="group flex flex-col rounded-2xl overflow-hidden border border-white/5 bg-gradient-to-b from-[#111827] to-[#1f2937] hover:border-[#02cbf9]/30 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(2,203,249,0.12)] hover:-translate-y-1 no-underline"
     >
       {/* Image */}
       <div className="relative aspect-square overflow-hidden bg-white">
@@ -28,7 +28,7 @@ export default function ProductCard({ product }) {
           loading="lazy"
         />
         {/* Shimmer overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080c10]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a202c]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Info */}
@@ -47,7 +47,7 @@ export default function ProductCard({ product }) {
           className={`mt-auto w-[90%] mx-auto mb-1 flex items-center justify-center gap-2 py-3 px-5 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer border ${
             added
               ? 'bg-green-500/10 border-green-500/40 text-green-400'
-              : 'bg-white/5 border-white/10 text-white/80 hover:bg-[#02cbf9] hover:border-[#02cbf9] hover:text-[#080c10] hover:shadow-[0_4px_16px_rgba(2,203,249,0.3)]'
+              : 'bg-white/5 border-white/10 text-white/80 hover:bg-[#02cbf9] hover:border-[#02cbf9] hover:text-[#1a202c] hover:shadow-[0_4px_16px_rgba(2,203,249,0.3)]'
           }`}
         >
           {added ? (

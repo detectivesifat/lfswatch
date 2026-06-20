@@ -34,7 +34,7 @@ export default function Checkout() {
 
   if (items.length === 0) {
     return (
-      <main className="min-h-screen bg-[#080c10] pt-28 pb-16">
+      <main className="min-h-screen bg-[#1a202c] pt-28 pb-16">
         <div className="max-w-3xl mx-auto px-5 sm:px-8">
           <Link
             to="/"
@@ -44,7 +44,7 @@ export default function Checkout() {
             Back to Shop
           </Link>
 
-          <div className="rounded-2xl p-10 sm:p-16 text-center bg-[#0d1117] border border-white/5 shadow-xl">
+          <div className="rounded-2xl p-10 sm:p-16 text-center bg-[#1f2937] border border-white/5 shadow-xl">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-2xl bg-white/3 border border-white/5 text-white/30 mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-shopping-bag">
                 <path d="M6 3h12"></path>
@@ -56,7 +56,7 @@ export default function Checkout() {
             <p className="text-sm text-white/40 mb-6">Add some watches to your cart first.</p>
             <Link
               to="/"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gradient-to-r from-[#02cbf9] to-[#01a8d0] hover:from-[#01b8e0] hover:to-[#0195ba] text-[#080c10] font-black text-sm rounded-xl transition-all duration-300 no-underline shadow-[0_4px_20px_rgba(2,203,249,0.35)] hover:shadow-[0_6px_28px_rgba(2,203,249,0.5)] hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gradient-to-r from-[#02cbf9] to-[#01a8d0] hover:from-[#01b8e0] hover:to-[#0195ba] text-[#1a202c] font-black text-sm rounded-xl transition-all duration-300 no-underline shadow-[0_4px_20px_rgba(2,203,249,0.35)] hover:shadow-[0_6px_28px_rgba(2,203,249,0.5)] hover:-translate-y-0.5"
             >
               Continue Shopping
             </Link>
@@ -67,7 +67,7 @@ export default function Checkout() {
   }
 
   return (
-    <main className="min-h-screen bg-[#080c10] pt-28 pb-16">
+    <main className="min-h-screen bg-[#1a202c] pt-28 pb-16">
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
         {/* Back Link */}
         <Link
@@ -101,7 +101,7 @@ export default function Checkout() {
           />
 
           {/* Single combined checkout box */}
-          <div className="bg-[#0d1117] border border-white/5 rounded-2xl overflow-hidden shadow-xl">
+          <div className="bg-[#1f2937] border border-white/5 rounded-2xl overflow-hidden shadow-xl">
             <OrderSummary
               items={items}
               onQtyChange={handleQtyChange}

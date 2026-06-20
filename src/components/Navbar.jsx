@@ -104,7 +104,7 @@ export default function Navbar() {
           {showDropdown && searchQuery.length > 0 && filteredProducts.length > 0 && (
             <div
               ref={dropdownRef}
-              className="absolute top-full left-0 right-0 mt-2 bg-[#0d1117] border border-white/10 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] overflow-hidden z-50 animate-slide-down"
+              className="absolute top-full left-0 right-0 mt-2 bg-[#1f2937] border border-white/10 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] overflow-hidden z-50 animate-slide-down"
             >
               <div className="grid grid-cols-1 gap-1 p-3 max-h-96 overflow-y-auto">
                 {filteredProducts.map((product) => (
@@ -207,7 +207,7 @@ export default function Navbar() {
           {showDropdown && searchQuery.length > 0 && filteredProducts.length > 0 && (
             <div
               ref={dropdownRef}
-              className="absolute top-full left-0 right-0 mt-2 bg-[#0d1117] border border-white/10 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] overflow-hidden z-50 animate-slide-down"
+              className="absolute top-full left-0 right-0 mt-2 bg-[#1f2937] border border-white/10 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] overflow-hidden z-50 animate-slide-down"
             >
               <div className="grid grid-cols-1 gap-1 p-3 max-h-96 overflow-y-auto">
                 {filteredProducts.map((product) => (

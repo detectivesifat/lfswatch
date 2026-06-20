@@ -2,7 +2,7 @@ import { Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080c10] border-t border-white/5 pb-16">
+    <footer className="bg-[#1a202c] border-t border-white/5 pb-16">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 pt-12 sm:pt-16 flex flex-col sm:flex-row items-center justify-around gap-8 sm:gap-12">
         
         {/* Column 1: Copyright */}

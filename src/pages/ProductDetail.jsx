@@ -54,7 +54,7 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
-      <main className="min-h-screen bg-[#080c10] pt-28 pb-16">
+      <main className="min-h-screen bg-[#1a202c] pt-28 pb-16">
         <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
           <p className="text-white/60 text-lg">Product not found.</p>
           <Link to="/" className="text-[#02cbf9] hover:underline mt-4 inline-block">Back to Shop</Link>
@@ -64,7 +64,7 @@ export default function ProductDetail() {
   }
 
   return (
-    <main className="min-h-screen bg-[#080c10] pt-28 pb-16">
+    <main className="min-h-screen bg-[#1a202c] pt-28 pb-16">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         {/* Back Link */}
         <Link
@@ -100,7 +100,7 @@ export default function ProductDetail() {
             <div className="flex flex-col sm:flex-row gap-3 mb-4">
               <button
                 onClick={handleBuyNow}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 px-5 bg-[#02cbf9] text-[#080c10] font-black text-base rounded-xl transition-colors duration-200 hover:bg-[#080c10] hover:text-[#02cbf9] hover:border hover:border-[#02cbf9] cursor-pointer"
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 px-5 bg-[#02cbf9] text-[#1a202c] font-black text-base rounded-xl transition-colors duration-200 hover:bg-[#1a202c] hover:text-[#02cbf9] hover:border hover:border-[#02cbf9] cursor-pointer"
               >
                 Buy Now
               </button>
@@ -109,7 +109,7 @@ export default function ProductDetail() {
                 className={`flex-1 flex items-center justify-center gap-2 py-3.5 px-5 font-black text-base rounded-xl transition-all duration-300 cursor-pointer border ${
                   added
                     ? 'bg-green-500/10 border-green-500/40 text-green-400'
-                    : 'bg-white/5 border-white/10 text-white/80 hover:bg-[#02cbf9] hover:border-[#02cbf9] hover:text-[#080c10] hover:shadow-[0_4px_16px_rgba(2,203,249,0.3)]'
+                    : 'bg-white/5 border-white/10 text-white/80 hover:bg-[#02cbf9] hover:border-[#02cbf9] hover:text-[#1a202c] hover:shadow-[0_4px_16px_rgba(2,203,249,0.3)]'
                 }`}
               >
                 {added ? <><Check size={18} /> Added!</> : <><ShoppingCart size={18} /> Add to Cart</>}
@@ -170,7 +170,7 @@ export default function ProductDetail() {
         </div>
 
         {/* Product Specifications */}
-        <div className="bg-[#0d1117] border border-white/5 rounded-2xl overflow-hidden shadow-xl">
+        <div className="bg-[#1f2937] border border-white/5 rounded-2xl overflow-hidden shadow-xl">
           <div className="px-5 py-3.5 border-b border-white/10 bg-gradient-to-r from-[#02cbf9]/[0.03] to-transparent">
             <h2 className="font-extrabold text-lg text-white flex items-center gap-2">
               <div className="w-1 h-5 bg-[#02cbf9] rounded-full" />

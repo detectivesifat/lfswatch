@@ -32,7 +32,7 @@ export default function CartSidebar() {
         ref={panelRef}
         className={`fixed top-0 right-0 h-full z-[70] flex flex-col
           w-full sm:w-[400px] lg:w-[430px]
-          bg-[#0d1117] border-l border-white/5
+          bg-[#1f2937] border-l border-white/5
           shadow-[−20px_0_60px_rgba(0,0,0,0.5)]
           transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
@@ -132,7 +132,7 @@ export default function CartSidebar() {
 
         {/* Footer */}
         {items.length > 0 && (
-          <div className="border-t border-white/5 px-6 py-5 space-y-4 bg-[#080c10]/50">
+          <div className="border-t border-white/5 px-6 py-5 space-y-4 bg-[#1a202c]/50">
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold text-white/50">Total</span>
               <span className="text-2xl font-black text-white">
@@ -142,7 +142,7 @@ export default function CartSidebar() {
             <a
               id="checkout-btn"
               href="/checkout"
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#02cbf9] to-[#01a8d0] hover:from-[#01b8e0] hover:to-[#0195ba] text-[#080c10] font-black text-base rounded-xl transition-all duration-300 no-underline shadow-[0_4px_20px_rgba(2,203,249,0.35)] hover:shadow-[0_6px_28px_rgba(2,203,249,0.5)] hover:-translate-y-0.5"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#02cbf9] to-[#01a8d0] hover:from-[#01b8e0] hover:to-[#0195ba] text-[#1a202c] font-black text-base rounded-xl transition-all duration-300 no-underline shadow-[0_4px_20px_rgba(2,203,249,0.35)] hover:shadow-[0_6px_28px_rgba(2,203,249,0.5)] hover:-translate-y-0.5"
             >
               <ShoppingBag size={18} />
               Continue to Buy
