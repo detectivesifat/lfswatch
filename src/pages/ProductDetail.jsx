@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ShoppingCart, Check, MessageCircle, Clipboard } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import products from '../data/products';
 
 export default function ProductDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { addItem } = useCart();
   const product = products.find((p) => p.id === Number(id));
   const [added, setAdded] = useState(false);
@@ -21,6 +22,12 @@ export default function ProductDetail() {
     addItem(product);
     setAdded(true);
     setTimeout(() => setAdded(false), 1500);
+  };
+
+  const handleBuyNow = () => {
+    if (!product) return;
+    addItem(product);
+    navigate('/checkout');
   };
 
   const orderText = product
@@ -91,12 +98,12 @@ export default function ProductDetail() {
 
             {/* Buy Now + Add to Cart */}
             <div className="flex flex-col sm:flex-row gap-3 mb-4">
-              <Link
-                to="/checkout"
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 px-5 bg-[#02cbf9] text-[#080c10] font-black text-base rounded-xl transition-colors duration-200 hover:bg-[#080c10] hover:text-[#02cbf9] hover:border hover:border-[#02cbf9] no-underline"
+              <button
+                onClick={handleBuyNow}
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 px-5 bg-[#02cbf9] text-[#080c10] font-black text-base rounded-xl transition-colors duration-200 hover:bg-[#080c10] hover:text-[#02cbf9] hover:border hover:border-[#02cbf9] cursor-pointer"
               >
                 Buy Now
-              </Link>
+              </button>
               <button
                 onClick={handleAddToCart}
                 className={`flex-1 flex items-center justify-center gap-2 py-3.5 px-5 font-black text-base rounded-xl transition-all duration-300 cursor-pointer border ${
